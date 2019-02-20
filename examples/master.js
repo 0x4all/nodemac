@@ -1,4 +1,3 @@
-var Agent = require("../lib/NodeAgent");
 var Master = require("../lib/NodeMaster");
 
 var masterinfo = {

@@ -24,12 +24,13 @@ nodemac:Node Master/ Agent / Client
 1. 构建基于zmq的tcp通路
 
 # ver 0.0.2
-1. Agent请求Master加入当前节点: req
-2. 接受Agent的请求加入: rep
+1. Agent请求Master加入当前节点: dealer
+2. 接受Agent的请求加入: router
 
 # ver 0.0.3     <=
-1. Agent可以更新当前节点的数据到 Master管理: req
-2. 接受Agent发布的节点数据: rep
+1. Agent可以更新当前节点的数据到 Master管理: dealer
+2. Master接受Agent发布的节点数据: router
+3. disconnect 不能定位agent
 
 # ver 0.0.4
 1. Master对Agent发出请求指令: req

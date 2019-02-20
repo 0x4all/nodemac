@@ -11,3 +11,14 @@ var agentinfo = {
 var agent = new Agent(agentinfo);
 agent.add_to_master(masterinfo);
 
+//setvalue
+var update_agent = function(){
+    var n = Math.floor(Math.random() * 100);
+    agent.sync_set("room:count", n);
+    agent.sync_set("user:count", n * 4);
+    agent.sync_set_obj({
+        rules:["mj_xlch","mj_anbj"]
+    })
+    setTimeout(update_agent, 2000);
+}
+update_agent();
