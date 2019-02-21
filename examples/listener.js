@@ -1,4 +1,4 @@
-var MasterListener = require("../lib/MasterListener");
+const {MasterListener} = require("../");
 
 var masterinfo = {
     host:"127.0.0.1",

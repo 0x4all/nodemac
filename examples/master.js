@@ -1,4 +1,5 @@
-var Master = require("../lib/NodeMaster");
+const {NodeMaster} = require("../");
+
 var config = require("./config");
 
 // console.debug = ()=>{}
@@ -7,6 +8,6 @@ var masterinfo = {
     port:9100,
     tport:9200, //转发同步数据的port
 }
-var master = new Master(config.agentKey);
+var master = new NodeMaster(config.agentKey);
 master.start(masterinfo);
 

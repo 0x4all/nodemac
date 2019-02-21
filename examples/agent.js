@@ -1,4 +1,4 @@
-var Agent = require("../lib/NodeAgent");
+const {NodeAgent} = require("../");
 var config = require("./config");
 
 var masterinfo = {
@@ -9,7 +9,7 @@ var masterinfo = {
 var agentinfo = {
     node_id:"server-id-" + Math.floor(Math.random()*1000),
 }
-var agent = new Agent(agentinfo, config.agentKey);
+var agent = new NodeAgent(agentinfo, config.agentKey);
 agent.add_to_master(masterinfo);
 
 //setvalue
