@@ -30,7 +30,7 @@ nodemac:Node Master/ Agent / Client
 # ver 0.0.3     <=
 1. Agent可以更新当前节点的数据到 Master管理: dealer
 2. Master接受Agent发布的节点数据: router
-3. disconnect 不能定位agent
+3. disconnect 不能定位agent，使用heartbeat解决
 
 # ver 0.0.4
 1. Master对Agent发出请求指令: req
@@ -39,3 +39,7 @@ nodemac:Node Master/ Agent / Client
 # ver 0.0.5
 1. 发布数据给订阅者： pub
 2. 订阅Master的数据，更新本地数据： sub
+
+
+# ver 0.0.6
+1. 可以使用identity去验证是合法主机
