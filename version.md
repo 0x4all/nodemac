@@ -36,11 +36,12 @@ nodemac:Node Master/ Agent / Client
 1. Master对Agent发出请求指令: req
 2. Agent 接受Master的指令操作： rep
 
-# ver 0.0.5 <= 
+# ver 0.0.5 
 1. 发布数据给订阅者： 
 2. 订阅Master的数据，更新本地数据：
 3. agent断线，要从master移除
 
 
-# ver 0.0.6 
+# ver 0.0.6 <= 
 1. 可以使用identity去验证是合法主机
+2. 将消息处理handler化
