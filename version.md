@@ -44,4 +44,3 @@ nodemac:Node Master/ Agent / Client
 
 # ver 0.0.6 <= 
 1. 可以使用identity去验证是合法主机
-2. 将消息处理handler化

@@ -9,7 +9,7 @@ var masterinfo = {
 var agentinfo = {
     node_id:"server-id-" + Math.floor(Math.random()*1000),
 }
-var agent = new Agent(agentinfo, config.agentKey + "1");
+var agent = new Agent(agentinfo, config.agentKey);
 agent.add_to_master(masterinfo);
 
 //setvalue
