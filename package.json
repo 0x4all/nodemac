@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bzeromq": "git+https://github.com/0x4all/bzeromq.git"
+    "bzeromq": "git+https://github.com/0x4all/bzeromq.git",
+    "debug": "^4.1.1"
   }
 }

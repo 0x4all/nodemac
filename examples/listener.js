@@ -6,13 +6,20 @@ var masterinfo = {
     tport:9200,
 }
 
-var listener = new MasterListener({identity:"webserver-1"});
+var listener = new MasterListener({node_id:"webserver-1"});
 listener.listen(masterinfo);
 
+listener.on("update", (info)=>{
+    console.log("update", listener._nodelist, Math.random());
+})
 
-function show(){
-    console.log(listener._nodelist, Math.random());
-    setTimeout(show,1000);
-}
 
-show();
+listener.on("addnode", (info)=>{
+    console.log("addnode",info, Math.random());
+})
+
+listener.on("removenode", (info)=>{
+    console.log("removenode",info, Math.random());
+})
+
+
